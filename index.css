@@ -1,0 +1,128 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@1,600&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(228,29,253,1) 56%, rgba(252,69,69,1) 100%);
+}
+.container{
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    min-height: 550px;
+   box-shadow: 0 0 25px 0 rgb(94, 83, 83);
+    border-radius: 15px;  
+}
+.form-content{
+    font-family: "Source Sans 3", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  padding: 30px 0;
+  font-style: normal;
+}
+.form-title{
+    position: relative;
+}
+.form-title::after{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    content: "";
+    width: 70px;
+    height: 8px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(16,1,25,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(238,14,130,1) 60%, transparent);}
+.form-title h2{
+    font-family: "Lobster", serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-style: normal;
+  background: linear-gradient(to right,rgb(7, 0, 0),rgb(254, 5, 5),transparent);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2em;
+}
+.form-title #title-line{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100px;
+    background: linear-gradient(to right, rgb(12, 0, 0),blue,transparent);
+    border-radius: 30px;
+    height: 8px;
+}
+.form-input{
+    padding: 10px 0;
+}
+.form-input input{
+    width: 380px;
+    height: 45px;
+    padding: 0 15px;
+    background: rgba(197, 195, 195, 0.148);
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+    outline: none;
+    border: 2px solid rgba(197, 195, 195, 0.148);
+    transition: border-color 0.3s;
+}
+.form-input input:focus{
+    border-color: rgb(179, 224, 254);
+}
+.form-input button{
+  width: 380px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: radial-gradient(circle, rgba(243,231,85,1) 0%, rgba(255,140,174,1) 0%, rgba(229,229,229,1) 100%, rgba(239,183,183,1) 100%);
+  transition: 0.4s;
+  font-family: "Barlow", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.form-input button:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 15px 0 rgb(238, 186, 232);
+}
+/* input field placehoder */
+::placeholder{
+    font-family: "Lato", serif;
+  font-weight: 900;
+  font-style: normal;
+    color: rgb(51, 52, 52);
+    font-size: 1.1em;
+}
+/* textarea */
+.form-input textarea{
+    background: rgba(197, 195, 195, 0.148);
+    outline: none;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.095);
+    transition: border-color 0.3s;
+}
+.form-input textarea:focus{
+    border-color: rgb(179, 224, 254);
+
+}
