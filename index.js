@@ -10,14 +10,16 @@ studentForm.addEventListener("submit",async (e)=>{
     const description = document.getElementById("desc").value;
 
 
-    const emailValid= /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+   
+   if(!name||!email||!college||!description){
+    alert("All fields are mandatory")
+    return;
+   }
+   const emailValid= /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailValid.test(email)) {
         alert("Please enter a valid email address");
         return;
     }
-   if(!name||!email||!college||!description){
-    alert("All fields are mandatory")
-   }
     console.log("Form data:", {name,email,college,description});
 
     try {
