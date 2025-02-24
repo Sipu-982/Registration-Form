@@ -115,6 +115,8 @@ body{
 }
 /* textarea */
 .form-input textarea{
+    width: 400px;
+    height: 120px;
     background: rgba(197, 195, 195, 0.148);
     outline: none;
     padding: 15px;
@@ -129,7 +131,10 @@ body{
 @media screen and (max-width:600px){
     .container{
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
+        min-height: auto;
     }
-   
+    .form-input input, .form-input textarea, .form-input button{
+        width: 300px;
+    }
 }
